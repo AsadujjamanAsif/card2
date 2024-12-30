@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Anniversary Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .card h1 {
+            color: #ff6b6b;
+            font-size: 2rem;
+        }
+        .card p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .card button {
+            background: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .card button:hover {
+            background: #ff3b3b;
+        }
+        .animated-heart {
+            font-size: 2rem;
+            color: #ff6b6b;
+            animation: heartbeat 1.5s infinite;
+            margin-bottom: 10px;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="animated-heart">❤️</div>
+        <h1>শুভ বিবাহবার্ষিকী, মিম!</h1>
+        <p>
+            প্রিয় মিম,  
+            তোমার ভালোবাসাই আমার জীবনের সবচেয়ে বড় উপহার।  
+            আমি তোমাকে চিরকাল ভালোবাসব।  
+        </p>
+        <button onclick="sendWish()">I Love You Jaan ❤️</button>
+    </div>
+
+    <script>
+        function sendWish() {
+            alert("Happy Anniversary, Mim! With all my love, Asif ❤️");
+        }
+    </script>
+</body>
+</html>
